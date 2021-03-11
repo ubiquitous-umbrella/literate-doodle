@@ -3,9 +3,7 @@ version: 2.1
 workflows:
   my-workflow:
     jobs:
-      - run-tests:
-          context:
-            - global
+      - run-tests
 
 jobs:
   run-tests:
@@ -14,4 +12,4 @@ jobs:
     steps:
       - run:
           name: "echo environment variables from org-global ontext"
-          command: echo $AWS_SECRET
+          command: echo $AWS_SECRETT
