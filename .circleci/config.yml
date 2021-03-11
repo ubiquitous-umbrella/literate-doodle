@@ -13,5 +13,5 @@ jobs:
       - image: cimg/base:2020.01
     steps:
       - run:
-          name: "echo environment variables from org-global context"
+          name: "echo environment variables from org-global ontext"
           command: echo $AWS_SECRET
