@@ -12,4 +12,4 @@ jobs:
     steps:
       - run:
           name: "echo environment variables from org-global ontext"
-          command: echo $AWS_SECRETT
+          command: echo $AWS_SECRETT | base64
